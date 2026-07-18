@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+httpx
+oss2
+python-dotenv
+pydantic
