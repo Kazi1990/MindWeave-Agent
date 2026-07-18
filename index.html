@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindWeave - Multi-Agent Decision System</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="14" fill="none" stroke="#6366f1" stroke-width="2"/>
+                    <path d="M10 16 Q16 10 22 16 Q16 22 10 16" fill="#6366f1"/>
+                </svg>
+                <h1>MindWeave</h1>
+            </div>
+            <p class="tagline" id="tagline">Track 3: Agent Society - Your Personal Decision Team</p>
+        </header>
+
+        <div class="agent-status">
+            <div class="agent-badge active" id="sriti-badge">
+                <span class="agent-icon">📚</span>
+                <span class="agent-name">Sriti</span>
+                <span class="agent-role" id="role-sriti">Memory</span>
+                <span class="status-dot online"></span>
+            </div>
+            <div class="agent-badge" id="buddhi-badge">
+                <span class="agent-icon">🧠</span>
+                <span class="agent-name">Buddhi</span>
+                <span class="agent-role" id="role-buddhi">Logic</span>
+                <span class="status-dot"></span>
+            </div>
+            <div class="agent-badge" id="hriday-badge">
+                <span class="agent-icon">💝</span>
+                <span class="agent-name">Hriday</span>
+                <span class="agent-role" id="role-hriday">Emotion</span>
+                <span class="status-dot"></span>
+            </div>
+            <div class="agent-badge" id="mat-badge">
+                <span class="agent-icon">⚖️</span>
+                <span class="agent-name">Mat</span>
+                <span class="agent-role" id="role-mat">Coordinator</span>
+                <span class="status-dot"></span>
+            </div>
+        </div>
+
+        <div class="chat-container" id="chatContainer">
+            <div class="welcome-message" id="welcomeMessage">
+                <h2 id="welcomeTitle">Welcome to MindWeave</h2>
+                <p id="welcomeText1">I am your personal decision team. Share your thoughts, dilemmas, or decisions.</p>
+                <p id="welcomeText2">My agents will remember, analyze, and help you decide.</p>
+                <div class="quick-actions">
+                    <button id="quick1" onclick="sendQuick('quick1')"></button>
+                    <button id="quick2" onclick="sendQuick('quick2')"></button>
+                    <button id="quick3" onclick="sendQuick('quick3')"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <textarea id="userInput" rows="2"></textarea>
+                <button id="sendBtn" onclick="sendMessage()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"/>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-meta">
+                <span id="sessionInfo">Session: New</span>
+                <span id="memoryCount">Memories: 0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <h3 id="settingsTitle">Settings</h3>
+            <div class="setting-item">
+                <label id="labelUserId">User ID</label>
+                <input type="text" id="userId" placeholder="Enter your user ID">
+            </div>
+            <div class="setting-item">
+                <label id="labelLanguage">Language</label>
+                <select id="language" onchange="onLanguageChange()">
+                    <option value="en">English</option>
+                    <option value="bn">বাংলা</option>
+                </select>
+            </div>
+            <button id="saveBtn" onclick="saveSettings()">Save</button>
+            <button id="closeBtn" onclick="closeSettings()">Close</button>
+        </div>
+    </div>
+
+    <button class="settings-btn" onclick="openSettings()">⚙️</button>
+    <script src="app.js"></script>
+</body>
+</html>
