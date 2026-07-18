@@ -16,7 +16,7 @@ Built for the **Global AI Hackathon Series with Qwen Cloud 2026** — Track 3: *
 
 ## 📐 Architecture
 
-![MindWeave Architecture](./architecture-diagram.png)
+![MindWeave Architecture](./MindWeave_Architecture.png)
 
 ## 🖥️ Live Backend Proof
 
