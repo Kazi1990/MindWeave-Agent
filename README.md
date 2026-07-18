@@ -1,4 +1,4 @@
-
+<div align="center">
 
 # 🧠 MindWeave
 
@@ -112,7 +112,7 @@ Response delivered to user
 ## 📁 Project Structure
 
 ```
-MindWeave/
+MindWeave-Agent/
 ├── main.py              # FastAPI backend — all four agents + memory pipeline
 ├── requirements.txt      # Python dependencies
 ├── static/
@@ -126,8 +126,8 @@ MindWeave/
 ## 🚀 Running Locally
 
 ```bash
-git clone https://github.com/Kazi1990/MindWeave.git
-cd MindWeave
+git clone https://github.com/Kazi1990/MindWeave-Agent.git
+cd MindWeave-Agent
 pip install -r requirements.txt
 ```
 
