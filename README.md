@@ -18,18 +18,6 @@ Built for the **Global AI Hackathon Series with Qwen Cloud 2026** — Track 3: *
 
 ![MindWeave Architecture](./MindWeave_Architecture.png)
 
-## 🖥️ Live Backend Proof
-
-> _Screenshot showing the app running on Alibaba Cloud ECS — to be added._
->
-> `![Backend running on Alibaba Cloud](./backend-screenshot.png)`
-
-## 🎬 Demo Video
-
-> **[▶ Watch the 3-minute demo on YouTube](#)** — link to be added once recorded.
-
----
-
 ## 💡 The Idea
 
 Most AI assistants give you one model's opinion, dressed up as an answer. **MindWeave doesn't trust a single perspective.**
@@ -160,7 +148,7 @@ MindWeave runs in production on **Alibaba Cloud ECS (Ubuntu 22.04)**, with persi
 ## 👤 Author
 
 **Kazi Humayun Rashid**
-Lead System Architect, TechTown
+Lead System Architect, TechTownByKazi
 [GitHub](https://github.com/Kazi1990) · [LinkedIn](https://linkedin.com/in/kazi-humayun-rashid-661a53331)
 
 ## 📄 License
